@@ -1,4 +1,6 @@
 require './lib/atm.rb'
+
+require 'pry'
 describe Atm do
   let(:account) { instance_double('Account')}
 
