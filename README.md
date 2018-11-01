@@ -18,6 +18,10 @@ As a ATM operator
 In order for our costumers to withdraw funds
 I need make sure that we only allow withdrawals if there are funds available
 
+As a ATM operator             
+In order to allow access active customers             
+I want to allow withdrawals from only active accounts
+
 ## Customer
 As a Customer              
 In order to keep my funds secure             
