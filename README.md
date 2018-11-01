@@ -26,3 +26,7 @@ I want to allow withdrawals from only active accounts
 As a Customer              
 In order to keep my funds secure             
 I want a secure Pin code & an expiry date on my card that allows only me access to my funds
+
+As a Customer
+In order to manage my funds
+I need to have a personal account
