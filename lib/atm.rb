@@ -47,7 +47,23 @@ class Atm
             @funds -= amount
             require 'date'
             account.balance = account.balance - amount
-            { status: true, message: 'success', date: Date.today, amount: amount }
+            {status: true, 
+            message: 'success', 
+            date: Date.today, 
+            amount: amount, 
+            bills: add_bills(amount)}
+    end
+
+    def add_bills(amount)
+        denominations = [20, 10, 5]
+        bills = []
+        denominations.each do |denomination|
+            while amount - denomination >= 0
+                amount -= denomination
+                bills << denomination
+            end
+        end
+        bills
     end
 
     def return_error_message(message)
