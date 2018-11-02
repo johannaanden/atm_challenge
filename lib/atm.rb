@@ -1,3 +1,5 @@
+
+
 class Atm
     attr_accessor :funds
 
@@ -26,10 +28,11 @@ class Atm
         Date.strptime(exp_date, '%m/%y') < Date.today
     end
 
+    private
+
     def account_disabled?(account)
         account.account_status != :active
     end
-    private
 
     def insufficient_funds_in_account?(amount, account)
         amount > account.balance
